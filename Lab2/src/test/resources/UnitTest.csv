@@ -1,0 +1,13 @@
+username,password,email,expected,actual,result
+john123,Pass@123,john@example.com,true,true,PASS
+anna,Abc@1234,anna@mail.com,true,true,PASS
+tom,Tom@2024,tom@gmail.com,true,true,PASS
+ab,Pass@123,ab@example.com,false,false,PASS
+alice,abc@123,alice@mail.com,false,false,PASS
+bob,ABC@123,bob@mail.com,false,false,PASS
+carol,Abc1234,carol@mail.com,false,false,PASS
+david,Ab@12,david@mail.com,false,false,PASS
+john123,Pass@123,johnexample.com,false,false,PASS
+john123,Pass@123,john@.com,false,false,PASS
+john123,Pass@123,@domain.com,false,false,PASS
+john123,Pass@123,john@domain,false,false,PASS
